@@ -25,10 +25,10 @@
         <activity
             android:name=".HubActivity"
             android:label="@string/title_activity_hub"
-            android:parentActivityName="com.scrubcity.app.MainActivity" >
+            android:parentActivityName=".MainActivity" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.scrubcity.app.MainActivity" />
+                android:value="com.scrubcity.app.scrbdex.MainActivity" />
         </activity>
     </application>
 
