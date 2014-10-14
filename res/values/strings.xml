@@ -9,5 +9,6 @@
     <string name="password_hint">The best number ever (x2).</string>
     <string name="login_button">Login</string>
     <string name="title_activity_hub">HubActivity</string>
+    <string name="default_list_text">Do Something</string>
 
 </resources>
