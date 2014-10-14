@@ -5,5 +5,9 @@
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
     <string name="title_activity_main">ScrbDex</string>
+    <string name="username_hint">Your email</string>
+    <string name="password_hint">The best number ever (x2).</string>
+    <string name="login_button">Login</string>
+    <string name="title_activity_hub">HubActivity</string>
 
 </resources>
