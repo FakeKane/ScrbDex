@@ -26,19 +26,30 @@ public final class R {
         public static final int sd_launcher=0x7f020001;
     }
     public static final class id {
-        public static final int action_settings=0x7f080000;
+        public static final int action_settings=0x7f080004;
+        public static final int container=0x7f080000;
+        public static final int login_button=0x7f080003;
+        public static final int password=0x7f080002;
+        public static final int username=0x7f080001;
     }
     public static final class layout {
-        public static final int activity_main=0x7f030000;
+        public static final int activity_hub=0x7f030000;
+        public static final int activity_main=0x7f030001;
+        public static final int fragment_hub=0x7f030002;
     }
     public static final class menu {
-        public static final int main=0x7f070000;
+        public static final int hub=0x7f070000;
+        public static final int main=0x7f070001;
     }
     public static final class string {
         public static final int action_settings=0x7f050002;
         public static final int app_name=0x7f050000;
         public static final int hello_world=0x7f050001;
+        public static final int login_button=0x7f050006;
+        public static final int password_hint=0x7f050005;
+        public static final int title_activity_hub=0x7f050007;
         public static final int title_activity_main=0x7f050003;
+        public static final int username_hint=0x7f050004;
     }
     public static final class style {
         /** 
