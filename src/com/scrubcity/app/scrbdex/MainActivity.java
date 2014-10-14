@@ -54,7 +54,7 @@ public class MainActivity extends Activity {
 	
 	
 	public class MainFragment extends Fragment
-	{
-		
+ {
+
 	}
 }
