@@ -13,7 +13,7 @@ public class HubActivity extends Activity {
 		setContentView(R.layout.activity_hub);
 		if (savedInstanceState == null) {
 			getFragmentManager().beginTransaction()
-					.add(R.id.container, new PlaceholderFragment()).commit();
+					.add(R.id.container, new HubFragment()).commit();
 		}
 	}
 
