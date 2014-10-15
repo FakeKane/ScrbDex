@@ -65,7 +65,7 @@ public final class R {
         /**  For option "pref_is_scrub" 
          */
         public static final int pref_is_scrub_label=0x7f07000b;
-        public static final int pref_is_scrub_yes=0x7f07000d;
+        public static final int pref_is_scrub_no=0x7f07000d;
         public static final int title_activity_hub=0x7f070007;
         public static final int title_activity_main=0x7f070003;
         public static final int title_activity_settings=0x7f070009;

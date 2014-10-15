@@ -1,5 +1,7 @@
 package com.scrubcity.app.scrbdex;
 
+import java.util.Locale;
+
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
@@ -29,10 +31,6 @@ public class MainActivity extends Activity {
 		// Handle action bar item clicks here. The action bar will
 		// automatically handle clicks on the Home/Up button, so long
 		// as you specify a parent activity in AndroidManifest.xml.
-		int id = item.getItemId();
-		if (id == R.id.action_settings) {
-			return true;
-		}
 		return super.onOptionsItemSelected(item);
 	}
 	
@@ -40,7 +38,7 @@ public class MainActivity extends Activity {
 	{
 		EditText username = (EditText)findViewById(R.id.username);
 		EditText password = (EditText)findViewById(R.id.password);
-		if (username.getText().toString().equals("kenz.kallal@gmail.com") && password.getText().toString().equals("6767"))
+		if (username.getText().toString().toLowerCase(Locale.getDefault()).equals("kenz") && password.getText().toString().equals("6767"))
 		{
 			Intent loginIntent = new Intent(this, HubActivity.class);
 			startActivity(loginIntent);
