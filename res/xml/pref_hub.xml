@@ -6,7 +6,7 @@
     <ListPreference
         android:key="@string/pref_is_scrub_key"
         android:title="@string/pref_is_scrub_label"
-        android:defaultValue="@string/pref_is_scrub_yes"
+        android:defaultValue="@string/pref_is_scrub_no"
         android:entryValues="@array/pref_is_scrub_values"
         android:entries="@array/pref_is_scrub_options" />
 

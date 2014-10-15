@@ -1,7 +1,6 @@
 package com.scrubcity.app.scrbdex;
 
 import android.app.Activity;
-import android.app.ActionBar;
 import android.app.Fragment;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -9,7 +8,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
-import android.os.Build;
+import android.widget.ArrayAdapter;
 
 public class ViewActivity extends Activity {
 
@@ -19,7 +18,7 @@ public class ViewActivity extends Activity {
 		setContentView(R.layout.activity_view);
 		if (savedInstanceState == null) {
 			getFragmentManager().beginTransaction()
-					.add(R.id.container, new PlaceholderFragment()).commit();
+					.add(R.id.container, new ViewFragment()).commit();
 		}
 	}
 
@@ -45,9 +44,11 @@ public class ViewActivity extends Activity {
 	/**
 	 * A placeholder fragment containing a simple view.
 	 */
-	public static class PlaceholderFragment extends Fragment {
+	public static class ViewFragment extends Fragment {
 
-		public PlaceholderFragment() {
+		private ArrayAdapter<String> viewAdapter;
+		
+		public ViewFragment() {
 		}
 
 		@Override
@@ -55,6 +56,8 @@ public class ViewActivity extends Activity {
 				Bundle savedInstanceState) {
 			View rootView = inflater.inflate(R.layout.fragment_view, container,
 					false);
+			
+			
 			return rootView;
 		}
 	}
