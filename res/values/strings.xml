@@ -11,5 +11,11 @@
     <string name="title_activity_hub">The Scrub Hub</string>
     <string name="default_list_text">Do Something</string>
     <string name="title_activity_settings">Settings</string>
+    <string name="title_activity_view">ViewActivity</string>
+    
+    <!-- For option "pref_is_scrub" -->
+    <string name="pref_is_scrub_label">Are you a scrub?</string>
+    <string name="pref_is_scrub_key">is_scrub</string>
+    <string name="pref_is_scrub_yes">Yes</string>
 
 </resources>

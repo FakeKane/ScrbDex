@@ -5,10 +5,12 @@ import java.util.Arrays;
 import java.util.List;
 
 import android.app.Fragment;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
@@ -51,6 +53,20 @@ public class HubFragment extends Fragment {
         ListView listView = (ListView) rootView.findViewById(R.id.listview_hub);
         listView.setAdapter(hubListAdapter);
 
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener()
+        {
+        	@Override
+        	public void onItemClick(AdapterView<?> adapterView, View view, int position, long l)
+        	{
+        		String selected = hubListAdapter.getItem(position);
+        		if (selected.equals("View Scrubs"))
+        		{
+        			Intent displayIntent = new Intent(getActivity(), ViewActivity.class);
+        			startActivity(displayIntent);		
+        		}
+        	}
+		});
+        
 		return rootView;
 	}
 }
