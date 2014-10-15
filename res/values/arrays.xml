@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <string-array name="pref_is_scrub_options">
+       	<item>Yes, I\'m a scrub!</item>
+  		<item>No, I\'m not a scrub!</item>
+    </string-array>
+    
+    <string-array name="pref_is_scrub_values">
+        <item>Yes</item>
+        <item>No</item>
+    </string-array>
+    
+</resources>

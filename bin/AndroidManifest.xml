@@ -28,7 +28,19 @@
         </activity>
         <activity
             android:name=".SettingsActivity"
-            android:label="@string/title_activity_settings">
+            android:label="@string/title_activity_settings"
+            android:parentActivityName=".HubActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTVITY"
+                android:value="HubActivity" />
+        </activity>
+        <activity
+            android:name=".ViewActivity"
+            android:label="@string/title_activity_view"
+            android:parentActivityName=".HubActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.scrubcity.app.scrbdex.HubActivity" />
         </activity>
     </application>
 
