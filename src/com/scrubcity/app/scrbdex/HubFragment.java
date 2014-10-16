@@ -33,7 +33,7 @@ public class HubFragment extends Fragment {
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
 			Bundle savedInstanceState) {
 		
-		String[] actions = {
+		final String[] actions = {
 				"View Scrubs",
 				"View Political Campaigns",
 				"Run for Mayor",
@@ -59,10 +59,14 @@ public class HubFragment extends Fragment {
         	public void onItemClick(AdapterView<?> adapterView, View view, int position, long l)
         	{
         		String selected = hubListAdapter.getItem(position);
-        		if (selected.equals("View Scrubs"))
+        		if (selected.equals(actions[0]))
         		{
         			Intent displayIntent = new Intent(getActivity(), ViewActivity.class);
         			startActivity(displayIntent);		
+        		}
+        		if (selected.equals(actions[3])){
+        			Intent displayIntent = new Intent(getActivity(), VoteActivity.class);
+        			startActivity(displayIntent);
         		}
         	}
 		});
