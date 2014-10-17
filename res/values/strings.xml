@@ -21,5 +21,12 @@
     <string name="title_activity_vote">VoteActivity</string>
     <string name="voting_button">Click to Vote!\n\n </string>
     <string name="default_count">0</string>
+    <string name="title_activity_detail">DetailActivity</string>
+    
+    <!-- For details for scrubs -->
+    <string name="scrub_name_hint">This scrub\'s name</string>
+    <string name="scrub_email_hint">This scrub\'s email</string>
+    <string name="save_detail_button">Save</string>
+
 
 </resources>

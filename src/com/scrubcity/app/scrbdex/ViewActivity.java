@@ -1,14 +1,20 @@
 package com.scrubcity.app.scrbdex;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import android.app.Activity;
 import android.app.Fragment;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.ListView;
 
 public class ViewActivity extends Activity {
 
@@ -28,7 +34,7 @@ public class ViewActivity extends Activity {
 		getMenuInflater().inflate(R.menu.view, menu);
 		return true;
 	}
-
+	
 	@Override
 	public boolean onOptionsItemSelected(MenuItem item) {
 		// Handle action bar item clicks here. The action bar will
@@ -56,7 +62,21 @@ public class ViewActivity extends Activity {
 				Bundle savedInstanceState) {
 			View rootView = inflater.inflate(R.layout.fragment_view, container,
 					false);
-			
+			List<String> scrubs = new ArrayList<String>();
+			scrubs.add("New Scrub");
+			viewAdapter = new ArrayAdapter<String>(getActivity(), R.layout.list_item_scrubs, R.id.list_item_scrubs, scrubs);
+			ListView listView = (ListView) rootView.findViewById(R.id.listview_scrubs);
+			listView.setAdapter(viewAdapter);
+			listView.setOnItemClickListener(new AdapterView.OnItemClickListener() 
+			{
+				@Override
+				public void onItemClick(AdapterView<?> adapterView, View view, int position, long l)
+				{
+					//String scrubName = viewAdapter.getItem(position);
+					Intent detailIntent = new Intent(getActivity(), DetailActivity.class);
+					startActivity(detailIntent);
+				}
+			});
 			
 			return rootView;
 		}
