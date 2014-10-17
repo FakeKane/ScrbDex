@@ -1,12 +1,8 @@
 package com.scrubcity.app.scrbdex;
 
-import java.io.File;
-import java.io.IOException;
-
 import android.app.Activity;
 import android.app.Fragment;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;

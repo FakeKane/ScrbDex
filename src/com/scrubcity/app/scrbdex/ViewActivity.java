@@ -65,15 +65,15 @@ public class ViewActivity extends Activity {
 			List<String> scrubs = new ArrayList<String>();
 			scrubs.add("New Scrub");
 			viewAdapter = new ArrayAdapter<String>(getActivity(), R.layout.list_item_scrubs, R.id.list_item_scrubs, scrubs);
-			ListView listView = (ListView) rootView.findViewById(R.id.list_item_scrubs);
+			ListView listView = (ListView) rootView.findViewById(R.id.listview_scrubs);
 			listView.setAdapter(viewAdapter);
 			listView.setOnItemClickListener(new AdapterView.OnItemClickListener() 
 			{
 				@Override
 				public void onItemClick(AdapterView<?> adapterView, View view, int position, long l)
 				{
-					String scrubName = viewAdapter.getItem(position);
-					Intent detailIntent = new Intent(getActivity(), DetailActivity.class).putExtra(Intent.EXTRA_TEXT, scrubName);
+					//String scrubName = viewAdapter.getItem(position);
+					Intent detailIntent = new Intent(getActivity(), DetailActivity.class);
 					startActivity(detailIntent);
 				}
 			});

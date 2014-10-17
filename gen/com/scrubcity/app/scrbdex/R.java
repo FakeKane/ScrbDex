@@ -31,11 +31,12 @@ public final class R {
         public static final int sd_launcher=0x7f020001;
     }
     public static final class id {
-        public static final int action_settings=0x7f0a000a;
+        public static final int action_settings=0x7f0a000b;
         public static final int container=0x7f0a0000;
-        public static final int list_item_hub_textview=0x7f0a0008;
-        public static final int list_item_scrubs=0x7f0a0009;
+        public static final int list_item_hub_textview=0x7f0a0009;
+        public static final int list_item_scrubs=0x7f0a000a;
         public static final int listview_hub=0x7f0a0007;
+        public static final int listview_scrubs=0x7f0a0008;
         public static final int login_button=0x7f0a0003;
         public static final int password=0x7f0a0002;
         public static final int save_detail_button=0x7f0a0006;
@@ -74,10 +75,11 @@ public final class R {
          */
         public static final int pref_is_scrub_label=0x7f07000b;
         public static final int pref_is_scrub_no=0x7f07000d;
-        public static final int save_detail_button=0x7f070010;
+        public static final int save_detail_button=0x7f070011;
+        public static final int scrub_email_hint=0x7f070010;
         /**  For details for scrubs 
          */
-        public static final int scrub_email_hint=0x7f07000f;
+        public static final int scrub_name_hint=0x7f07000f;
         public static final int title_activity_detail=0x7f07000e;
         public static final int title_activity_hub=0x7f070007;
         public static final int title_activity_main=0x7f070003;
